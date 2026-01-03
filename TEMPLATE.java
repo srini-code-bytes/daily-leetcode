@@ -7,6 +7,9 @@ Date: YYYY-MM-DD
 Problem Summary:
 <1–2 lines>
 
+*/
+
+/*
 Approach 1: Brute Force
 - Idea:
 - Time Complexity:
@@ -23,12 +26,3 @@ Key Insight:
 Edge Cases:
 -
 */
-
-class Solution {
-
-    public <return_type> <method_name>(<parameters>) {
-
-        // implementation
-        return null;
-    }
-}
