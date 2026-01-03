@@ -1,7 +1,7 @@
 /*
 LeetCode: 66 - Plus One
 Difficulty: Easy
-Category: Arrays
+Category: Array / Math (Carry Propagation)
 Date: 01-01-2026
 
 Problem Summary:
@@ -55,10 +55,14 @@ Time complexity is O(n).
 Space complexity is O(1) auxiliary space in the average case, and O(n) in the worst case due to creating a new array when all digits are 9.
 
 Key Insight:
-Right to left, add, handle 10, early return, else new array.
+Addition propagates carry from right to left; once a digit is not 9, the process stops early.
+
 
 Edge Cases:
-- [9,9,9], [8,9,9]
+- All digits are 9 → requires creating a new array
+- Carry propagates through multiple digits (e.g., [8,9,9])
+- Single digit input
+
 */
 
 class Solution {
