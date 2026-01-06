@@ -66,7 +66,7 @@ import java.util.Map;
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
         /* BRUTE FORCE - HASHMAP Approach
         Map<Integer, Integer> hMap = new HashMap<>();
@@ -90,14 +90,5 @@ class Solution {
             hSet.add(n);
         }
         return false;
-    }
-}
-
-public class LC217_ContainsDuplicate {
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] nums = {1, 4, 4, 4, 5};
-        boolean result = solution.containsDuplicate(nums);
-        System.out.println(result); // Output: false
     }
 }
